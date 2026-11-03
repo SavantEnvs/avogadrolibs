@@ -1,0 +1,9 @@
+project: savantenvs/avogadrolibs
+target: fuzz_core_variantmap
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_core_variantmap/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_core_variantmap
+    libfuzzer: true
+    timeout: 60

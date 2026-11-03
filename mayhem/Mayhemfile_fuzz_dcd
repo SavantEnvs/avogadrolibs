@@ -1,0 +1,10 @@
+project: savantenvs/avogadrolibs
+target: fuzz_dcd
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_dcd/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_dcd
+    libfuzzer: true
+    timeout: 60
+    dictionary: /mayhem/tests/io/fuzz/dcd-small.dict

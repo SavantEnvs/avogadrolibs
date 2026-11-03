@@ -1,0 +1,4 @@
+[j, k, i]: cubic (left handed) but GROMACS does not support v1(y) ≠ 0 and v2(z) ≠ 0
+1
+    1Si      Si    1   0.200   0.200   0.200
+0.000   0.000   0.000   0.400   0.000   0.000   0.400   0.400   0.000

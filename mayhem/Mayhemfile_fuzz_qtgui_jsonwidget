@@ -1,0 +1,9 @@
+project: savantenvs/avogadrolibs
+target: fuzz_qtgui_jsonwidget
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_qtgui_jsonwidget/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_qtgui_jsonwidget
+    libfuzzer: true
+    timeout: 60

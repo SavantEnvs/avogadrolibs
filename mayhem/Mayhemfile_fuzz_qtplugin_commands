@@ -1,0 +1,10 @@
+project: savantenvs/avogadrolibs
+target: fuzz_qtplugin_commands
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_qtplugin_commands/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_qtplugin_commands
+    libfuzzer: true
+    timeout: 60
+    dictionary: /mayhem/mayhem/fuzz_qtplugin_commands/qtplugin_commands.dict

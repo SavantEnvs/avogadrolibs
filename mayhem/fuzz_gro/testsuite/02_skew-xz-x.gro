@@ -1,0 +1,4 @@
+skew xz-plane along x-axis: valid GROMACS input
+1
+    1Si      Si    1   0.200   0.000   0.000
+0.400   0.400   0.400   0.000   0.000   0.000   0.000   0.080   0.000

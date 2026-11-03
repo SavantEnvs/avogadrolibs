@@ -1,0 +1,9 @@
+project: savantenvs/avogadrolibs
+target: fuzz_core_molecule
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_core_molecule/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_core_molecule
+    libfuzzer: true
+    timeout: 60

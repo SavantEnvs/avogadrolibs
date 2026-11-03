@@ -1,0 +1,9 @@
+project: savantenvs/avogadrolibs
+target: fuzz_gro
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_gro/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_gro
+    libfuzzer: true
+    timeout: 60
